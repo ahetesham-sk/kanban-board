@@ -1,0 +1,25 @@
+/* home.component.css */
+.list-group-item {
+  transition: all 0.3s ease;
+  cursor: move;
+}
+
+.list-group-item.dragging {
+  opacity: 0.5;
+  transform: scale(0.98);
+}
+
+.list-group-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-group {
+  min-height: 100px;
+  transition: all 0.3s ease;
+}
+
+.list-group.highlight {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 2px dashed #666;
+}
